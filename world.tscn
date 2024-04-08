@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkatvibod0iu6"]
+
+[ext_resource type="PackedScene" uid="uid://2aimp856pvx7" path="res://characters/objetivo.tscn" id="2_bi3fm"]
+[ext_resource type="PackedScene" uid="uid://nd3205awltk8" path="res://characters/fabric.tscn" id="2_jh1d2"]
+
+[node name="World" type="Node2D"]
+
+[node name="Fabric" parent="." instance=ExtResource("2_jh1d2")]
+position = Vector2(678, 433)
+
+[node name="Objetivo" parent="." instance=ExtResource("2_bi3fm")]
+position = Vector2(178, 129)

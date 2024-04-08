@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://ptt0sth37h6s"]
+
+[ext_resource type="Script" path="res://scripts/minion.gd" id="1_eoxx4"]
+[ext_resource type="PackedScene" uid="uid://b1k4qrrgtamgw" path="res://characters/minion.tscn" id="2_h7lfl"]
+[ext_resource type="PackedScene" uid="uid://2aimp856pvx7" path="res://characters/objetivo.tscn" id="3_v8g7l"]
+
+[node name="Test" type="Node2D"]
+script = ExtResource("1_eoxx4")
+
+[node name="Minion" parent="." instance=ExtResource("2_h7lfl")]
+position = Vector2(559, 347)
+
+[node name="Objetivo" parent="." instance=ExtResource("3_v8g7l")]
+position = Vector2(419, 515)

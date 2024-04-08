@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://nd3205awltk8"]
+
+[ext_resource type="Script" path="res://scripts/fabric.gd" id="1_fx7we"]
+[ext_resource type="Texture2D" uid="uid://cu4538hhcldeg" path="res://assets/fabric.png" id="1_xkm33"]
+
+[node name="Fabric" type="Node2D"]
+script = ExtResource("1_fx7we")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(10, 10)
+texture = ExtResource("1_xkm33")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
